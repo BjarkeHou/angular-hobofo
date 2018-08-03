@@ -1,0 +1,10 @@
+<h2>Players</h2>
+<ul class="players">
+	<li *ngFor="let player of players"
+		[class.selected]="player === selectedPlayer"
+		(click)="onSelect(player)">
+		<span class="playername">{{player.name}}</span>
+	</li>
+</ul>
+
+<app-player-detail [player]="selectedPlayer"></app-player-detail>

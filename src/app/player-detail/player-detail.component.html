@@ -1,0 +1,26 @@
+<div *ngIf="player">
+	<div><span>id: </span>{{player.id}}</div>
+	<div>
+		<label>Navn:
+			<input [(ngModel)]="player.name" placeholder="name">
+		</label>
+	</div>
+	<div>
+		<label>Telefon:
+			<input [(ngModel)]="player.phone" placeholder="phone">
+		</label>
+	</div>
+	<div>
+		<label>Aktivt medlemsskab:
+			<input [(ngModel)]="player.active_membership" placeholder="active_membership">
+		</label>
+	</div>
+	<div>
+		<label>SMS notifikationer:
+			<input [(ngModel)]="player.receive_sms" placeholder="receive_sms">
+		</label>
+	</div>
+	<div><span>Sidst betalte medlemsskab: </span>{{player.last_paid_membership}}</div>
+	<div><span>Turneringspoint: </span>{{player.rating}}</div>
+	<div><span>Elo rating: </span>{{player.elo}}</div>
+</div>
