@@ -1,3 +1,5 @@
+import {Deserializable} from "./deserializable";
+
 export class Player {
   id: number;
   name: string;
@@ -7,4 +9,10 @@ export class Player {
   rating: number;
   elo: number;
   receive_sms: boolean;
+
+  // deserialize(input: any) {
+  //   Object.assign(this, input);
+  //   return this;
+  // }
+
 }
